@@ -66,7 +66,7 @@ function insertItem(item, index) {
   let tr = document.createElement("tr");
 
   tr.innerHTML = `
-    <td><a href="/coins.html">${item.desc}</a></td>
+    <td><a href="/src/coins.html">${item.desc}</a></td>
     <td>R$ ${item.amount}</td>
     <td>${item.qtd}</td>
     <td class="columnType">${item.type === "Entrada"
