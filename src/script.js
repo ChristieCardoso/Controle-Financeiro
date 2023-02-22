@@ -3,19 +3,13 @@ const descItem = document.querySelector("#desc");
 const amount = document.querySelector("#valor");
 const type = document.querySelector("#type");
 const quantidade = document.querySelector("#qtd");
-
-
 const btnSalvarLanc = document.querySelector("#salvarPorte");
-
-
 const aporte = document.querySelector(".aporte");
 const saida = document.querySelector(".saida");
 const averagePrice = document.querySelector(".price");
 const total = document.querySelector(".total");
-
 const btc = document.getElementById("bitcoin");
 const eth = document.getElementById("ethereum");
-
 
 var liveprice = {
     "async": true,
@@ -44,7 +38,6 @@ btnSalvarLanc.onclick = () => {
     qtd: quantidade.value,
   });
 
-
   setItensBD();
 
   loadItens();
@@ -67,7 +60,7 @@ function insertItem(item, index) {
 
   tr.innerHTML = `
     <td><a href="/src/coins.html">${item.desc}</a></td>
-    <td>R$ ${item.amount}</td>
+    <td>$ ${item.amount}</td>
     <td>${item.qtd}</td>
     <td class="columnType">${item.type === "Entrada"
       ? '<i class="bx bxs-chevron-up-circle"></i>'
@@ -120,21 +113,12 @@ function getTotals() {
   // calcula o totalCoin / pela quantidade de lançamento
   const precoMedio = parseInt(numerString1 / allWallet.length)
 
-  
-  
-  console.log('Total', numerString1)
-  console.log('lançamento entrada', amountExpenses)
-  console.log('precoMedio', precoMedio)
-  
-
   //apresenta na tela
   aporte.innerHTML = totalIncomes;
   saida.innerHTML = totalExpenses;
   // averagePrice.innerHTML = precoMedio;
   total.innerHTML = totalCoin;
   quantidade.innerHTML = quantidade;
-
-
 
 }
 

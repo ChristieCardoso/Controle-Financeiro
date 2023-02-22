@@ -9,6 +9,7 @@
   body {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   main {
@@ -19,38 +20,63 @@
     align-items: center;
   }
 
+  .img {
+    display: flex;
+    width: 150px;
+    justify-items: end;
+    margin-top: 8px;
+    mix-blend-mode: multiply;
+  }
+
   .resume {
     display: flex;
-    padding: 10px 0;
-    gap: 40px;
-    width: 100%;
+    padding: 2rem 0;
+    gap: 2rem;
+    width: auto;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 3rem;
   }
 
   .resume>div {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: left;
     box-shadow: 0px 0px 5px #2C73D2;
     border-radius: 10px;
     padding: 10px;
-    width: 150px;
+    width: 120px;
+  }
+
+  .saida,
+  .total,
+  .aporte {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
   }
 
   .newCoin {
     display: flex;
-    gap: 10px;
-    align-items: end;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #00c9a7;
+    gap: 2rem;
+    align-items: center;
+    width: auto;
+    justify-content: left;
+    flex-wrap: initial;
+    padding: 10px;
   }
 
   .desc,
-  .type,
-  .valor {
+  .valor,
+  .qtd,
+  .type {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .newCoin>button {
@@ -60,17 +86,23 @@
     border-radius: 5px;
     cursor: pointer;
     height: 34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
   }
 
   input,
   select {
     padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
   }
 
-  .divTable {
+  .Table {
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 0px 5px #00c9a7;
   }
 
   table {
@@ -83,6 +115,7 @@
     text-align: start;
     border-bottom: inset;
     padding-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   i {
@@ -90,7 +123,7 @@
   }
 
   .bxs-chevron-up-circle {
-    color: #00c9a7;
+    color: #00c911;
   }
 
   .bxs-chevron-down-circle {
