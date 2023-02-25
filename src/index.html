@@ -12,70 +12,159 @@
 
 </head>
 
-<body>
+<body class="root">
 
-    <header>
-        <img src="/img/dca.jpg" class="img">
+    <main class="containerPai">
 
-    </header>
-    <main>
-        <div class="resume">
-            <div>
-                Aporte: $
-                <span class="aporte">0.00</span>
+        <div class="stylesDesktop">
+
+            <div class="containerCards">
+
+                <div class="resume">
+
+                    <div class="styleContainer">
+                        <div class="styleNome">
+                            Aporte
+                        </div>
+                        <!--<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="styleIcon " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-tip="Valor aportado." currentItem="false">
+                            <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                        </svg>-->
+                        <span class="aporte">0.00</span>
+                    </div>
+
+                    <div class="styleContainer">
+                        <div class="styleNome">
+                            Saída
+                        </div>
+                        <span class="saida">0.00</span>
+                    </div>
+
+                    <div class="styleContainer">
+                        <div class="styleNome">
+                            Total
+                        </div>
+                        <span class="total">0.00</span>
+                    </div>
+
+                </div>
+
+                <div class="styleBotoes">
+
+                    <div class="stylebotao">
+
+                        <button id="btn_form" class="btn-name">+ Aporte</button>
+
+                    </div>
+
+                    <div class="formulario">
+
+                        <div id="my_form">
+
+                            <div class="cabecalho">
+                                <div>Novo Aporte</div>
+                                <div>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
+                                        class="svg-inline--fa fa-times fa-w-11 styles_iconefechar__xvhu3" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                        <path fill="currentColor"
+                                            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="styleModel">
+
+                                <div class="corpo-do-form">
+
+                                    <div>
+                                        <div>
+                                            <label class="moe">Moeda:</label>
+                                        </div>
+
+                                        <input type="text">
+
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <label class="pre" for="pre">Preço da moeda</label>
+                                        </div>
+                                        <input type="text" name="pre" value="1">
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <label class="dat">Data do Aporte?</label>
+                                        </div>
+                                        <input type="date">
+                                    </div>
+
+                                    <div>
+                                        <div>
+                                            <label class="val">Valor Aportado</label>
+                                        </div>
+                                        <input type="text" inputmode="decimal" value="$0">
+                                    </div>
+
+                                    <div>
+                                        <label class="qtt">Quantidade de Tolken</label>
+                                        <div></div>
+                                        <input type="text" inputmode="decimal" value="$0">
+                                    </div>
+
+                                    <button type="button" style="margin-top: 16px;">Salvar</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div>
-                Saídas: $
-                <span class="saida">0.00</span>
-            </div>
 
-            <div>
-                Total: $
-                <span class="total">0.00</span>
-            </div>
-        </div>
-
-        <div class="newCoin">
-            <div class="desc">
-                <label for="desc">Nome Tolken</label>
-                <input type="text" id="desc" />
-            </div>
+            <div class="newCoin">
+                <div class="desc">
+                    <label for="desc">Nome Tolken</label>
+                    <input type="text" id="desc" />
+                </div>
 
 
-            <div class="valor">
-                <label for="valor">Valor do Aporte</label>
-                <input type="number" id="valor" />
-            </div>
-            <div class="qtd">
-                <label for="qtd">Qtd. Tolken</label>
-                <input type="number" id="qtd" />
-            </div>
+                <div class="valor">
+                    <label for="valor">Valor do Aporte</label>
+                    <input type="number" id="valor" />
+                </div>
+                <div class="qtd">
+                    <label for="qtd">Qtd. Tolken</label>
+                    <input type="number" id="qtd" />
+                </div>
 
-            <div class="type">
-                <label for="type">Tipo</label>
-                <select id="type">
-                    <option>Entrada</option>
-                    <option>Saída</option>
-                </select>
+                <div class="type">
+                    <label for="type">Tipo</label>
+                    <select id="type">
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                </div>
+                <button id="salvarPorte">Incluir</button>
             </div>
-            <button id="salvarPorte">Incluir</button>
-        </div>
-        <div class="Table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th class="columnAmount">Valor</th>
-                        <th class="columnqtd">Qtd. Tolken</th>
-                        <th class="columnType">Tipo</th>
-                        <th class="columnAction">Excluir</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div class="Table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th class="columnAmount">Valor</th>
+                            <th class="columnqtd">Qtd. Tolken</th>
+                            <th class="columnType">Tipo</th>
+                            <th class="columnAction">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>

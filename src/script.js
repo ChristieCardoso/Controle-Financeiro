@@ -10,19 +10,29 @@ const averagePrice = document.querySelector(".price");
 const total = document.querySelector(".total");
 const btc = document.getElementById("bitcoin");
 const eth = document.getElementById("ethereum");
+var btn = document.getElementById('btn_form');
+var form = document.getElementById('my_form');
+
+btn.addEventListener('click', function() {
+  if(form.style.display != 'block') {
+    form.style.display = 'block';
+    return;
+  }
+  form.style.display = 'none';
+});
 
 var liveprice = {
-    "async": true,
-    "scroosDomain": true,
-    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_currencies=usd&precision=2",
-    "method": "GET",
-    "headers": {}
+  "async": true,
+  "scroosDomain": true,
+  "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_currencies=usd&precision=2",
+  "method": "GET",
+  "headers": {}
 }
 
-$.ajax(liveprice).done(function (response){
-    btc.innerHTML = response.bitcoin.usd;
-    eth.innerHTML = response.ethereum.usd;
-    
+$.ajax(liveprice).done(function (response) {
+  btc.innerHTML = response.bitcoin.usd;
+  eth.innerHTML = response.ethereum.usd;
+
 });
 let allWallet = {};
 
@@ -45,7 +55,7 @@ btnSalvarLanc.onclick = () => {
   descItem.value = "";
   amount.value = 0;
   quantidade.value = 0;
-  
+
 };
 //função para deletar
 function deleteItem(index) {

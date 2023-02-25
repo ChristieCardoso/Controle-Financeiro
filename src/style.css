@@ -1,50 +1,294 @@
+  /* Limpando formatações padão*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Mynerve&family=Tilt+Prism&display=swap');
+
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: Montserrat;
     outline: none;
+    font-style: normal;
+    box-sizing: border-box;
+    border: unset;
+    
   }
 
+  
   body {
-    display: flex;
-    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  
+  
+  
+  body {
+
+    margin: 0;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: var(--bs-body-font-family);
+    font-size: 1rem;
+    font-size: var(--bs-body-font-size);
+    font-weight: 400;
+    font-weight: var(--bs-body-font-weight);
+    line-height: 1.5;
+    line-height: var(--bs-body-line-height);
+    color: #212529;
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: #fff;
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     width: 100%;
+    height: 100vh;
+    background-color: #050A15 !important;
+    color: #FFF;
+
   }
 
   main {
-    max-width: 550px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
 
-  .img {
+
+  .root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .containerPai {
+    padding-top: 73px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .stylesDesktop {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
-    width: 150px;
-    justify-items: end;
-    margin-top: 8px;
-    mix-blend-mode: multiply;
+    flex-direction: column;
+    grid-gap: 8px;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .containerCards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
   }
 
   .resume {
     display: flex;
-    padding: 2rem 0;
+    grid-gap: 16px;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 24px 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .styleContainer {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+    gap: 16px;
+    background: #191c21;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #484848;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .styleNome {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 8px;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .styleBotoes {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 8px;
+    gap: 8px;
+    padding: 0 24px;
+    width: 100%;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+
+  #btn_form {
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -.25px;
+    color: #fff;
+    padding: 8px;
+    background: #407bff;
+    border-radius: 8px;
+  }
+
+  #my_form {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    max-width: 100%;
+    background: #050a15;
+    color: #fff;
+    margin: auto;
+    box-shadow: 0 0 15px 1px #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+
+  .formlario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(39,39,40,.7);
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+  }
+
+  .containerCards {
+    display: flex;
+    grid-gap: 16px;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 24px 0;
+  }
+
+  .cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -.25px;
+    color: #fff;
+    padding: 8px 24px;
+    background: #191c21;
+    border-bottom: 1px solid #484848;
+  }
+
+  svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+  }
+
+
+
+  .stylebotao {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  
+  .btn-name {
+    cursor: pointer;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -.25px;
+    color: #a40808;
+    padding: 8px;
+    background: #50ff40;
+    border-radius: 8px;
+  }
+
+  .resume {
+    display: flex;
+    padding: 2rem 2rem;
     gap: 2rem;
-    width: auto;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 
   .resume>div {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    box-shadow: 0px 0px 5px #2C73D2;
+    justify-content: end;
+    box-shadow: 0px 0px 5px #ffffff;
     border-radius: 10px;
     padding: 10px;
     width: 120px;
@@ -59,15 +303,13 @@
   }
 
   .newCoin {
+    flex-wrap: wrap;
     display: flex;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #00c9a7;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     width: auto;
-    justify-content: left;
-    flex-wrap: initial;
-    padding: 10px;
+    padding: 1rem;
+   
   }
 
   .desc,
@@ -77,6 +319,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+
   }
 
   .newCoin>button {
@@ -102,7 +346,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    box-shadow: 0px 0px 5px #00c9a7;
+    box-shadow: 0px 0px 5px #ffffff;
+    background-color: #343835;
+
   }
 
   table {
@@ -114,8 +360,11 @@
   th {
     text-align: start;
     border-bottom: inset;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #ffffff inset;
+
+
   }
 
   i {
@@ -182,3 +431,14 @@
   .container .coin-price div h1 {
     font-size: 20px;
   }
+
+  /* 
+  .img {
+    display: flex;
+    width: 150px;
+    justify-items: end;
+    margin-top: 8px;
+    mix-blend-mode: multiply;
+    box-shadow: 0px 0px 5px #2C73D2;
+  }
+  */
