@@ -1,428 +1,227 @@
-  /* Limpando formatações padão*/
+ /* Limpando formatações padão*/
 
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Mynerve&family=Tilt+Prism&display=swap');
+ * {
+   outline: none;
+   font-style: normal;
+   box-sizing: border-box;
+   border: unset;
+ }
 
-  * {
-    font-family: Montserrat;
-    outline: none;
-    font-style: normal;
-    box-sizing: border-box;
-    border: unset;
+ body {
+   width: 100%;
+   height: 100vh;
+   margin: 0;
+   background-color: #050A15;
+   color: #FFF;
+ }
 
-  }
+ main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
 
+ dialog {
+   padding: 0;
+ }
 
-  body {
-    line-height: 1;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
+ /* Cards Container */
 
+ .resume {
+   display: flex;
+   width: 100%;
+   padding: 2px 50px;
+   justify-content: space-between;
+ }
 
+ .resume>div {
+   display: flex;
+   font-weight: bold;
+   font-size: 20px;
+   flex-direction: column;
+   justify-content: center;
+   box-shadow: 0px 0px 5px #ffffff;
+   border-radius: 10px;
+   padding: 10px;
+   width: 120px;
+   margin-top: 2rem;
+ }
 
-  body {
+ .containerCards {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 16px 24px 0;
+   margin-bottom: 20px;
+ }
 
-    margin: 0;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    width: 100%;
-    height: 100vh;
-    background-color: #050A15;
-    color: #FFF;
-  }
+ .styleContainer {
+   display: flex;
+   grid-gap: 16px;
+   background: #191c21;
+   padding: 16px 16px 90px;
+   border-radius: 8px;
+   border: 1px solid #484848;
+   margin: 5px;
+ }
 
-  main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  
-  .containerCards {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
-  .containerCards {
-    display: flex;
-    grid-gap: 16px;
-    gap: 16px;
-    width: 100%;
-    padding: 16px 24px 0;
-  }
-  
-  .resume {
-    display: flex;
-    grid-gap: 16px;
-    gap: 16px;
-    width: 100%;
-    padding: 16px 24px 0;
-    margin: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
+ .styleNome {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   font-size: 1.4rem;
+ }
 
-  .styleContainer {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 16px;
-    gap: 16px;
-    background: #191c21;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 16px;
-    border-radius: 8px;
-    border: 1px solid #484848;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
+ .total,
+ .aporte,
+ .saida {
+   display: flex;
+   justify-content: center;
+ }
 
-  .styleNome {
-    display: flex;
-    justify-content: space-between;
-    grid-gap: 8px;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
+ .styleBotoes {
+   display: flex;
+   width: 500px;
+   height: 50px;
+   margin-top: 100px;
+   margin-right: 50px;
+   margin-left: 500px;
+ }
 
-  .styleBotoes {
-    display: flex;
-    justify-content: flex-end;
-    grid-gap: 8px;
-    gap: 8px;
-    padding: 0 24px;
-    width: 100%;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
+ #btn_form {
+   width: 100%;
+   display: flex;
+   cursor: pointer;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   color: #fff;
+   padding: 8px;
+   background: #407bff;
+   border-radius: 8px;
+ }
 
+ /*  Formulário Container  */
 
-  #btn_form {
-    width: 100%;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -.25px;
-    color: #fff;
-    padding: 8px;
-    background: #407bff;
-    border-radius: 8px;
-  }
+ #my_form {
+   display: flex;
+   flex-direction: column;
+   min-width: 600px;
+   height: 650px;
+   background: #050a15;
+   color: #fff;
+ }
 
-  #my_form {
-    display: flex;
-    flex-direction: column;
-    min-width: 600px;
-    max-width: 100%;
-    background: #050a15;
-    color: #fff;
-    margin: auto;
-    box-shadow: 0 0 15px 1px #000;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
+ .styleModel {
+   display: flex;
+   flex-direction: column;
+   color: #ffffff;
+   margin-top: 1.1rem;
+   font-size: 1.2rem;
+   margin-left: 20px;
+   margin-right: 20px;
+ }
 
-  .formlario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background: rgba(39, 39, 40, .7);
-    overflow: auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
+ .moeda,
+ .preMoeda,
+ .dataApor,
+ .valorApor,
+ .qtdTolke,
+ .type {
+   display: flex;
+   flex-direction: column;
+   color-scheme: dark;
+   width: 100%;
+   background: unset;
+   border-radius: 6px;
+   padding: 8px;
+   font-size: 15px;
+   border: 2px solid #303338;
+ }
 
-  }
+ .cabecalhoForm {
+   display: flex;
+   justify-content: space-between;
+   line-height: 10px;
+   color: #fff;
+   padding: 0px 15px 0px 220px;
+   background: #181f2b;
+ }
 
-  svg:not(:root).svg-inline--fa {
-    overflow: visible;
-  }
+ .btnClose {
+   cursor: pointer;
+   margin-top: 5px;
+   font-weight: bold;
+ }
 
-  .svg-inline--fa.fa-w-11 {
-    width: 0.6875em;
-  }
+ .btnsalva {
+   display: flex;
+   cursor: pointer;
+   width: 10rem;
+   justify-content: center;
+   margin-left: 13rem;
+   font-size: 1rem;
+   padding: 1rem;
+   margin-top: 4rem;
+   text-align: center;
+   color: #fff;
+   background: #407bff;
+   border-radius: 15px;
+ }
 
-  .styles_iconefechar__xvhu3 {
-    cursor: pointer;
-  }
+ /* Tabela Container */
 
-  .svg-inline--fa {
-    display: inline-block;
-    font-size: inherit;
-    height: 1em;
-    overflow: visible;
-    vertical-align: -0.125em;
-  }
+ .Table {
+   margin-top: 2rem;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   box-shadow: 0px 0px 5px #ffffff;
+   background-color: #343835;
+ }
 
+ table {
+   width: 98%;
+   padding: 20px 0;
+   border-radius: 5px;
+ }
 
-  .styles_iconefechar__xvhu3 {
-    cursor: pointer;
-  }
+ th {
+   text-align: start;
+   border-bottom: inset;
+   padding-bottom: 2px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border-color: #ffffff inset;
+ }
 
-  .salvabtn {
-    width: 100%;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -.25px;
-    color: #fff;
-    padding: 8px;
-    background: #407bff;
-    border-radius: 8px;
-  }
+ i {
+   font-size: 25px;
+ }
 
+ .bxs-chevron-up-circle {
+   color: #00c911;
+ }
 
-  .cabecalho {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -.25px;
-    color: #fff;
-    padding: 8px 24px;
-    background: #191c21;
-    border-bottom: 1px solid #484848;
-  }
+ .bxs-chevron-down-circle {
+   color: #d83121;
+ }
 
-  svg:not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: hidden;
-  }
+ .columnAction {
+   width: 40px;
+   text-align: center;
+ }
 
+ .columnAction>button {
+   background: transparent;
+   border: none;
+ }
 
+ .colunmAmount {
+   width: 30%;
+ }
 
-  .stylebotao {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-  }
-
-  .btn-name {
-    cursor: pointer;
-    width: 100%;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -.25px;
-    color: #a40808;
-    padding: 8px;
-    background: #50ff40;
-    border-radius: 8px;
-  }
-
-  .resume {
-    display: flex;
-    padding: 2rem 2rem;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  .resume>div {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    box-shadow: 0px 0px 5px #ffffff;
-    border-radius: 10px;
-    padding: 10px;
-    width: 120px;
-  }
-
-  .saida,
-  .total,
-  .aporte {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-  }
-
-  .newCoin {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    width: auto;
-    padding: 1rem;
-
-  }
-
-  .desc,
-  .valor,
-  .qtd,
-  .type {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-  }
-
-  .newCoin>button {
-    background-color: #2C73D2;
-    border: none;
-    padding: 0 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 34px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-  }
-
-  input,
-  select {
-    padding: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
-  }
-
-  .Table {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 0px 5px #ffffff;
-    background-color: #343835;
-
-  }
-
-  table {
-    width: 98%;
-    padding: 20px 0;
-    border-radius: 5px;
-  }
-
-  th {
-    text-align: start;
-    border-bottom: inset;
-    padding-bottom: 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-color: #ffffff inset;
-
-
-  }
-
-  i {
-    font-size: 25px;
-  }
-
-  .bxs-chevron-up-circle {
-    color: #00c911;
-  }
-
-  .bxs-chevron-down-circle {
-    color: #d83121;
-  }
-
-  .columnAction {
-    width: 40px;
-    text-align: center;
-  }
-
-  .columnAction>button {
-    background: transparent;
-    border: none;
-  }
-
-  .colunmAmount {
-    width: 30%;
-  }
-
-  .colunmType {
-    width: 80px;
-    text-align: center;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-  }
-
-  .container .coin-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 3px #ccc;
-    margin: 7px;
-  }
-
-  .container .coin-price .logo {
-    width: 70px;
-    margin-right: 10px;
-  }
-
-  .container .coin-price .logo img {
-    width: 100%;
-  }
-
-  .container .coin-price div {
-    display: block;
-  }
-
-  .container .coin-price div h1 {
-    font-size: 20px;
-  }
+ .colunmType {
+   width: 80px;
+   text-align: center;
+ }

@@ -134,8 +134,8 @@ function getTotals() {
   // averagePrice.innerHTML = precoMedio;
   total.innerHTML = totalCoin;
   quantidade.innerHTML = quantidade;
-
 }
+
 
 const getItensBD = () => JSON.parse(localStorage.getItem("db_allWallet")) ?? [];
 const setItensBD = () =>
