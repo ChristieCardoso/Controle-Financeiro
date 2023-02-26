@@ -42,7 +42,6 @@
                 </div>
 
                 <dialog class="formulario">
-
                     <div id="my_form">
                         <div class="cabecalho">
                             <h2>Novo Aporte</h2>
@@ -50,11 +49,9 @@
                         </div>
 
                         <form class="styleModel">
-
                             <div>
                                 <label class="moe">Moeda:</label>
-
-                                <input type="text">
+                                <input type="text" id="desc">
                             </div>
 
                             <div>
@@ -69,44 +66,28 @@
 
                             <div>
                                 <label class="val">Valor Aportado</label>
-                                <input type="number">
+                                <input type="number" id="valor">
                             </div>
 
                             <div>
                                 <label class="qtt">Quantidade de Tolken</label>
-                                <input type="number">
+                                <input type="number" id="qtd">
+                            </div>
+                            <div class="type">
+                                <label for="type">Tipo</label>
+                                <select id="type">
+                                    <option>Entrada</option>
+                                    <option>Saída</option>
+                                </select>
                             </div>
                         </form>
-                        <button type="button" class="salvabtn" style="margin-top: 16px;">Salvar</button>
+                        <button type="button" id="salvarPorte" class="salvabtn"
+                            style="margin-top: 16px;">Salvar</button>
                     </div>
                 </dialog>
             </div>
         </div>
 
-        <div class="newCoin">
-            <div class="desc">
-                <label for="desc">Nome Tolken</label>
-                <input type="text" id="desc" />
-            </div>
-
-            <div class="valor">
-                <label for="valor">Valor do Aporte</label>
-                <input type="number" id="valor" />
-            </div>
-            <div class="qtd">
-                <label for="qtd">Qtd. Tolken</label>
-                <input type="number" id="qtd" />
-            </div>
-
-            <div class="type">
-                <label for="type">Tipo</label>
-                <select id="type">
-                    <option>Entrada</option>
-                    <option>Saída</option>
-                </select>
-            </div>
-            <button id="salvarPorte">Incluir</button>
-        </div>
         <div class="Table">
             <table>
                 <thead>
@@ -119,11 +100,9 @@
                     </tr>
                 </thead>
                 <tbody>
-
                 </tbody>
             </table>
         </div>
-
     </main>
     <script src="script.js"></script>
 </body>
