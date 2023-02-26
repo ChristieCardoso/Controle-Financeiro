@@ -8,32 +8,31 @@ const aporte = document.querySelector(".aporte");
 const saida = document.querySelector(".saida");
 const averagePrice = document.querySelector(".price");
 const total = document.querySelector(".total");
-const btc = document.getElementById("bitcoin");
-const eth = document.getElementById("ethereum");
-var btn = document.getElementById('btn_form');
-var form = document.getElementById('my_form');
+const btc = document.querySelector("bitcoin");
+const eth = document.querySelector("ethereum");
+const btnAporte = document.querySelector('#btn_form');
+const btnClose = document.querySelector('#btnClose');
+const formAporte = document.querySelector('dialog');
 
-btn.addEventListener('click', function() {
-  if(form.style.display != 'block') {
-    form.style.display = 'block';
-    return;
-  }
-  form.style.display = 'none';
-});
 
-var liveprice = {
-  "async": true,
-  "scroosDomain": true,
-  "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_currencies=usd&precision=2",
-  "method": "GET",
-  "headers": {}
-}
+btnClose.onclick = function () {
+  formAporte.close()
+};
 
-$.ajax(liveprice).done(function (response) {
-  btc.innerHTML = response.bitcoin.usd;
-  eth.innerHTML = response.ethereum.usd;
+// const liveprice = {
+//   "async": true,
+//   "scroosDomain": true,
+//   "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_currencies=usd&precision=2",
+//   "method": "GET",
+//   "headers": {}
+// }
 
-});
+// $.ajax(liveprice).done(function (response) {
+//   btc.innerHTML = response.bitcoin.usd;
+//   eth.innerHTML = response.ethereum.usd;
+// });
+
+
 let allWallet = {};
 
 btnSalvarLanc.onclick = () => {
@@ -49,14 +48,20 @@ btnSalvarLanc.onclick = () => {
   });
 
   setItensBD();
-
   loadItens();
+  formAporte.close();
+
 
   descItem.value = "";
   amount.value = 0;
   quantidade.value = 0;
 
 };
+
+btnAporte.onclick = function () {
+  formAporte.showModal();
+};
+
 //função para deletar
 function deleteItem(index) {
   allWallet.splice(index, 1);
