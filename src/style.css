@@ -108,7 +108,7 @@
    display: flex;
    flex-direction: column;
    min-width: 600px;
-   height: 650px;
+   height: 600px;
    background: #050a15;
    color: #fff;
  }
@@ -130,15 +130,17 @@
  .qtdTolke,
  .type {
    display: flex;
+   color: #fff;
    flex-direction: column;
    color-scheme: dark;
    width: 100%;
    background: unset;
-   border-radius: 6px;
+   border-radius: 25px;
    padding: 8px;
    font-size: 15px;
    border: 2px solid #303338;
- }
+  align-items: baseline; 
+  }
 
  .cabecalhoForm {
    display: flex;
@@ -153,6 +155,7 @@
    cursor: pointer;
    margin-top: 5px;
    font-weight: bold;
+   margin-top: 20px;
  }
 
  .btnsalva {
@@ -163,7 +166,7 @@
    margin-left: 13rem;
    font-size: 1rem;
    padding: 1rem;
-   margin-top: 4rem;
+   margin-top: 5rem;
    text-align: center;
    color: #fff;
    background: #407bff;

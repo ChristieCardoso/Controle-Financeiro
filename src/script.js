@@ -3,6 +3,8 @@ const descItem = document.querySelector("#desc");
 const amount = document.querySelector("#valor");
 const type = document.querySelector("#type");
 const quantidade = document.querySelector("#qtd");
+const preMoeda = document.querySelector("#preMoeda");  
+const date = document.querySelector("#date");
 const btnSalvarLanc = document.querySelector("#salvarPorte");
 const aporte = document.querySelector(".aporte");
 const saida = document.querySelector(".saida");
@@ -36,7 +38,7 @@ btnClose.onclick = function () {
 let allWallet = {};
 
 btnSalvarLanc.onclick = () => {
-  if (descItem.value === "" || amount.value === "" || type.value === "" || quantidade.value === "") {
+  if (preMoeda.value === "" || date.value === "" || descItem.value === "" || amount.value === "" || type.value === "" || quantidade.value === "") {
     return alert("Preencha todos os campos!");
   }
 
@@ -45,6 +47,8 @@ btnSalvarLanc.onclick = () => {
     amount: Math.abs(amount.value).toFixed(2),
     type: type.value,
     qtd: quantidade.value,
+    date: date.value,
+    preMoeda: preMoeda.value,
   });
 
   setItensBD();
@@ -55,6 +59,7 @@ btnSalvarLanc.onclick = () => {
   descItem.value = "";
   amount.value = 0;
   quantidade.value = 0;
+  preMoeda.value = 0;
 
 };
 
@@ -74,9 +79,11 @@ function insertItem(item, index) {
   let tr = document.createElement("tr");
 
   tr.innerHTML = `
+    <td>${item.date}</td>
     <td><a href="/src/coins.html">${item.desc}</a></td>
     <td>$ ${item.amount}</td>
-    <td>${item.qtd}</td>
+    <td>$ ${item.preMoeda}</td>
+    <td>${item.qtd}</td>   
     <td class="columnType">${item.type === "Entrada"
       ? '<i class="bx bxs-chevron-up-circle"></i>'
       : '<i class="bx bxs-chevron-down-circle"></i>'
